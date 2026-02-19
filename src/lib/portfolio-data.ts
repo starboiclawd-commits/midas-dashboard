@@ -53,7 +53,7 @@ export interface PortfolioData {
   stopLevels: Record<string, string>;
 }
 
-// Static portfolio data (will be loaded from API later)
+// Static portfolio data - Updated Feb 18, 2026 @ 11:18 PM EST
 export const portfolioData: PortfolioData = {
   "name": "Midas Mock Portfolio",
   "currency": "CAD",
@@ -69,7 +69,7 @@ export const portfolioData: PortfolioData = {
       "entryPrice": 63.90,
       "entryDate": "2026-02-07",
       "avgCost": "Blended (59 @ $61.75, 29 @ $69.58)",
-      "currentValue": 6123.04,
+      "currentValue": 5833.52,
       "signalSource": "SOXX"
     }
   ],
@@ -114,6 +114,18 @@ export const portfolioData: PortfolioData = {
       "totalValueUSD": 7699.90,
       "totalValueCAD": 10547.81,
       "note": "REBALANCED: 80% SOXL / 20% Cash - Closed BTC & TQQQ"
+    },
+    {
+      "date": "2026-02-17",
+      "totalValueUSD": 7052.24,
+      "totalValueCAD": 9660.60,
+      "note": "Pullback - SOXL down, stop level tight at 2.6%"
+    },
+    {
+      "date": "2026-02-18",
+      "totalValueUSD": 7410.38,
+      "totalValueCAD": 10151.21,
+      "note": "Recovery - SOXL bounced back"
     }
   ],
   "stats": {
@@ -121,11 +133,11 @@ export const portfolioData: PortfolioData = {
     "wins": 1,
     "losses": 1,
     "closedPnL": -22.68,
-    "openPnL": 462.54,
-    "totalPnL": 439.26
+    "openPnL": 210.32,
+    "totalPnL": 149.74
   },
   "stopLevels": {
-    "SOXL": "Keltner Lower Band (HLCC) - recalculate daily"
+    "SOXL": "Keltner Lower Band (HLCC) @ $62.00"
   }
 };
 
